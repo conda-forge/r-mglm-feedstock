@@ -16,7 +16,6 @@ build:
   merge_build_host: true  # [win]
   number: 1
   noarch: generic
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -24,10 +23,8 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
-
   host:
     - r-base
-
   run:
     - r-base
 
@@ -41,7 +38,6 @@ about:
   license: GPL (>= 2)
   summary: 'Provides functions that (1) fit multivariate discrete distributions, (2) generate random numbers from multivariate discrete distributions, and (3) run regression and penalized regression on the multivariate categorical response data.  Implemented models include: multinomial logit model, Dirichlet multinomial
     model, generalized Dirichlet multinomial model, and negative multinomial model. Making the best of the minorization-maximization (MM) algorithm and Newton-Raphson method, we derive and implement stable and efficient algorithms to find the maximum likelihood estimates. On a multi-core machine, multi-threading is supported.'
-
   license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
